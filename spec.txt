@@ -1,0 +1,3 @@
+when input is 3 output is ping
+
+when input is 5 output is pong
