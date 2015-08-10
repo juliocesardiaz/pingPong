@@ -12,9 +12,10 @@
 		return $app ['twig']->render('form.html.twig');
 	});
 	
-	$app->get("/view_ping_pong", function() use ($app)) {
+	$app->get("/view_ping_pong", function() use ($app) {
 		$myPingPong = new PingPong;
 		$pingPong = $myPingPong->makePingPong($_GET['number']);
 		return $app['twig']->render('pingPong.html.twig', array('result' => $pingPong));
 	});
+	return $app;
 ?>

@@ -6,7 +6,13 @@
 </head>
 <body>
 	<h1>Ping-Pong: </h1>
-	{% for ping in result %}
-	{% endfor %}
+	<ul>
+		{% for ping in result %}
+			<li>{{ ping }}</li>
+		{% endfor %}
+	</ul>
+	<form action='/'>
+			<button type='submit' class='btn-success'>Go Back</button>
+		</form>
 </body>
 </html>
